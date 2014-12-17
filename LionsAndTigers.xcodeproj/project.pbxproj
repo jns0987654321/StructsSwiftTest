@@ -13,6 +13,7 @@
 		9CB8D5431A40D448004AEBD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB8D5421A40D448004AEBD8 /* Images.xcassets */; };
 		9CB8D5461A40D448004AEBD8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB8D5441A40D448004AEBD8 /* LaunchScreen.xib */; };
 		9CB8D5521A40D449004AEBD8 /* LionsAndTigersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8D5511A40D449004AEBD8 /* LionsAndTigersTests.swift */; };
+		9CF64C131A422703004C1ACB /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF64C121A422703004C1ACB /* Tiger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9CB8D54B1A40D448004AEBD8 /* LionsAndTigersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LionsAndTigersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB8D5501A40D448004AEBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CB8D5511A40D449004AEBD8 /* LionsAndTigersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionsAndTigersTests.swift; sourceTree = "<group>"; };
+		9CF64C121A422703004C1ACB /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				9CB8D53B1A40D447004AEBD8 /* AppDelegate.swift */,
 				9CB8D53D1A40D448004AEBD8 /* ViewController.swift */,
+				9CF64C121A422703004C1ACB /* Tiger.swift */,
 				9CB8D53F1A40D448004AEBD8 /* Main.storyboard */,
 				9CB8D5421A40D448004AEBD8 /* Images.xcassets */,
 				9CB8D5441A40D448004AEBD8 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB8D53E1A40D448004AEBD8 /* ViewController.swift in Sources */,
+				9CF64C131A422703004C1ACB /* Tiger.swift in Sources */,
 				9CB8D53C1A40D447004AEBD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				9CB8D5571A40D449004AEBD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CB8D5581A40D449004AEBD8 /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				9CB8D55A1A40D449004AEBD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
