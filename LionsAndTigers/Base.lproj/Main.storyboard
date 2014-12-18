@@ -26,7 +26,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="hHd-DP-PYf"/>
-                                    <barButtonItem title="Next" id="KEE-Iu-cVN"/>
+                                    <barButtonItem title="Next" id="KEE-Iu-cVN">
+                                        <connections>
+                                            <action selector="myBarButtonItemPressed:" destination="BYZ-38-t0r" id="u2N-M4-4Nk"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="442" width="320" height="44"/>
@@ -85,7 +89,6 @@
                         <outlet property="breedLabel" destination="Ozp-OF-ph4" id="G7T-uE-al7"/>
                         <outlet property="myImageView" destination="tRS-LP-brq" id="fLN-6I-Jn9"/>
                         <outlet property="nameLabel" destination="tYP-0Q-6bf" id="ZZ7-j9-cKM"/>
-                        <outlet property="nextBarButtonItemPressed" destination="KEE-Iu-cVN" id="1ZC-L9-4Qe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

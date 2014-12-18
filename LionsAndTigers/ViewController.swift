@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var breedLabel: UILabel!
     
+    var myTigers:[Tiger] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,6 +35,29 @@ class ViewController: UIViewController {
         ageLabel.text = "\(myTiger.age)"
         breedLabel.text = myTiger.breed
         
+        myTigers.append(myTiger)
+        
+        var mySecondTiger = Tiger()
+        mySecondTiger.age = 3
+        mySecondTiger.name = "Tigger"
+        mySecondTiger.breed = "Trini"
+        mySecondTiger.image = UIImage(named: "Lion.jpg")
+        
+        var myThirdTiger = Tiger()
+        myThirdTiger.age = 3
+        myThirdTiger.name = "Tigger"
+        myThirdTiger.breed = "Trini"
+        myThirdTiger.image = UIImage(named: "LionCub2.jpeg")
+        
+        var myFourthTiger = Tiger()
+        myFourthTiger.age = 3
+        myFourthTiger.name = "Tigger"
+        myFourthTiger.breed = "Trini"
+        myFourthTiger.image = UIImage(named: "LionCub1.jpg")
+        
+        myTigers += [mySecondTiger, myThirdTiger,myFourthTiger]
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +65,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var nextBarButtonItemPressed: UIBarButtonItem!
+    @IBAction func myBarButtonItemPressed(sender: UIBarButtonItem) {
+        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        let tiger = myTigers[randomIndex]
+        
+//        myImageView.image = tiger.image
+//        nameLabel.text = tiger.name
+//        ageLabel.text = "\(tiger.age)"
+//        breedLabel.text = tiger.breed
+        
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations:
+            {
+                self.myImageView.image = tiger.image
+                self.nameLabel.text = tiger.name
+                self.ageLabel.text = "\(tiger.age)"
+                self.breedLabel.text = tiger.breed
+            }, completion: { (finished: Bool) -> () in
+        })
+    }
+    
 
 }
 
