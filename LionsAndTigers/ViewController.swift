@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     var myTigers:[Tiger] = []
     
+    var currentIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,7 +68,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func myBarButtonItemPressed(sender: UIBarButtonItem) {
-        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        
+        var randomIndex:Int
+        
+        do {
+            randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        }while currentIndex == randomIndex
+        
+        currentIndex == randomIndex
+        
         let tiger = myTigers[randomIndex]
         
 //        myImageView.image = tiger.image
